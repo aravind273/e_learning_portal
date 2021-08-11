@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="2.4" xmlns="http://JAVA.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+	
+	<servlet>
+	<servlet-name>abc</servlet-name>
+	<servlet-class>project.AddServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>userEnrollServlet</servlet-name>
+	<servlet-class>project.UserCourseEnrollServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>AddFeedbackServlet</servlet-name>
+	<servlet-class>project.AddFeedbackServlet</servlet-class>
+	</servlet>
+	
+	
+	<servlet-mapping>
+	<servlet-name>abc</servlet-name>
+	<url-pattern>/register</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+	<servlet-name>userEnrollServlet</servlet-name>
+	<url-pattern>/enrollCourse</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+	<servlet-name>AddFeedbackServlet</servlet-name>
+	<url-pattern>/addFeedback</url-pattern>
+	</servlet-mapping>
+	
+	 <welcome-file-list>
+ <welcome-file>Home.html</welcome-file>
+ </welcome-file-list>
+		
+	
+</web-app>
